@@ -9,12 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var txtMsg: UITextField!
     @IBOutlet weak var lblMsg: UILabel!
     @IBAction func btnMsg(_ sender: Any) {
-        
+        lblMsg.text = txtMsg.text
+        txtMsg.resignFirstResponder()
     }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
