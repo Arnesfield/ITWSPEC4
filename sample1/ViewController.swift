@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         txtMsg.resignFirstResponder()
     }
     
+    @IBAction func btnClose(_ sender: Any) {
+        txtMsg.resignFirstResponder()
+    }
     
     
     override func viewDidLoad() {

@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					C55E8B451F83749400C6E95F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HWW3JX37AH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,9 +261,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HWW3JX37AH;
 				INFOPLIST_FILE = sample1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arnesfield.ios.sample1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appleone.sample1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,9 +275,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HWW3JX37AH;
 				INFOPLIST_FILE = sample1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arnesfield.ios.sample1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appleone.sample1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -299,6 +304,7 @@
 				C55E8B5A1F83749400C6E95F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
