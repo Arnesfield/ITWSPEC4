@@ -41,7 +41,10 @@
 				C55E8B481F83749400C6E95F /* sample1 */,
 				C55E8B471F83749400C6E95F /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 		C55E8B471F83749400C6E95F /* Products */ = {
 			isa = PBXGroup;
