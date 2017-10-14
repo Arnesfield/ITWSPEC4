@@ -81,7 +81,7 @@
         <!--Red View-->
         <scene sceneID="ITX-eA-pLU">
             <objects>
-                <viewController id="LoV-An-dxC" sceneMemberID="viewController">
+                <viewController id="LoV-An-dxC" customClass="ColorViewController" customModule="ios_10_10_17" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oEM-1X-P0e"/>
                         <viewControllerLayoutGuide type="bottom" id="zTi-yp-0wu"/>
@@ -92,41 +92,45 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXd-KW-eWS">
                                 <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                                <connections>
+                                    <action selector="btnAny:" destination="LoV-An-dxC" eventType="touchUpInside" id="fmE-WV-MRY"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vwH-mZ-2UT">
-                                <rect key="frame" x="16" y="225.5" width="343" height="216"/>
+                                <rect key="frame" x="16" y="226.5" width="343" height="215.5"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eqi-8O-I4N">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eqi-8O-I4N">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="66.5"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyx-H3-bav">
-                                        <rect key="frame" x="0.0" y="74.5" width="343" height="67"/>
+                                        <rect key="frame" x="0.0" y="74.5" width="343" height="66.5"/>
                                         <color key="backgroundColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Submit">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnMsg:" destination="LoV-An-dxC" eventType="touchUpInside" id="ghe-5s-MJf"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNd-gG-Tdl">
-                                        <rect key="frame" x="0.0" y="149.5" width="343" height="66.5"/>
+                                        <rect key="frame" x="0.0" y="149" width="343" height="66.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="eqi-8O-I4N" firstAttribute="width" secondItem="vwH-mZ-2UT" secondAttribute="width" id="07Z-hn-hXy"/>
                                     <constraint firstItem="DNd-gG-Tdl" firstAttribute="width" secondItem="vwH-mZ-2UT" secondAttribute="width" id="Wf5-if-JXj"/>
-                                    <constraint firstItem="eqi-8O-I4N" firstAttribute="width" secondItem="vwH-mZ-2UT" secondAttribute="width" id="eAC-r9-pOC"/>
                                     <constraint firstItem="Vyx-H3-bav" firstAttribute="width" secondItem="vwH-mZ-2UT" secondAttribute="width" id="fnN-km-9gq"/>
-                                    <constraint firstItem="eqi-8O-I4N" firstAttribute="leading" secondItem="vwH-mZ-2UT" secondAttribute="leading" id="vcE-TC-dYa"/>
-                                    <constraint firstItem="eqi-8O-I4N" firstAttribute="top" secondItem="vwH-mZ-2UT" secondAttribute="top" id="xpr-yQ-5Ls"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espiritu, Nisperos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tab-MP-6ul">
-                                <rect key="frame" x="16" y="630.5" width="134.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espiritu. Nisperos." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tab-MP-6ul">
+                                <rect key="frame" x="16" y="631" width="139" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -141,14 +145,18 @@
                             <constraint firstItem="vXd-KW-eWS" firstAttribute="height" secondItem="DNr-XZ-ukY" secondAttribute="height" id="M2W-Pr-iz7"/>
                             <constraint firstItem="zTi-yp-0wu" firstAttribute="top" secondItem="tab-MP-6ul" secondAttribute="bottom" constant="16" id="bcI-c9-2U9"/>
                             <constraint firstItem="vXd-KW-eWS" firstAttribute="leading" secondItem="DNr-XZ-ukY" secondAttribute="leading" id="edb-FM-MUG"/>
+                            <constraint firstItem="eqi-8O-I4N" firstAttribute="height" secondItem="vXd-KW-eWS" secondAttribute="height" multiplier="0.1" id="f1F-Fo-8an"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vwH-mZ-2UT" secondAttribute="trailing" id="gB0-oL-3b5"/>
                             <constraint firstItem="vwH-mZ-2UT" firstAttribute="centerY" secondItem="DNr-XZ-ukY" secondAttribute="centerY" id="lkJ-X3-7Rz"/>
-                            <constraint firstItem="eqi-8O-I4N" firstAttribute="height" secondItem="DNr-XZ-ukY" secondAttribute="height" multiplier="0.1" id="tvy-80-lXs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Red View" id="76t-Yn-84W">
                         <barButtonItem key="backBarButtonItem" title="Back" id="h2p-ks-ERm"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lblMsg" destination="DNd-gG-Tdl" id="GeT-y7-xaq"/>
+                        <outlet property="txtMsg" destination="eqi-8O-I4N" id="ClS-Gk-c6c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZq-BL-RF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +165,7 @@
         <!--Green View-->
         <scene sceneID="UfO-rN-awY">
             <objects>
-                <viewController id="sKY-qe-QNm" sceneMemberID="viewController">
+                <viewController id="sKY-qe-QNm" customClass="ColorViewController" customModule="ios_10_10_17" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XHR-9a-4zz"/>
                         <viewControllerLayoutGuide type="bottom" id="MBp-7L-Mxc"/>
@@ -168,15 +176,18 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRm-aL-Gn9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="btnAny:" destination="sKY-qe-QNm" eventType="touchUpInside" id="8X4-QA-BwV"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="R72-JV-SUI">
                                 <rect key="frame" x="16" y="226.5" width="343" height="215.5"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UNA-eZ-XKn">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UNA-eZ-XKn">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="66.5"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-yR-mmQ">
                                         <rect key="frame" x="0.0" y="74.5" width="343" height="66.5"/>
@@ -185,6 +196,9 @@
                                         <state key="normal" title="Submit">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnMsg:" destination="sKY-qe-QNm" eventType="touchUpInside" id="kHg-Ze-pFO"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfc-jb-B0n">
                                         <rect key="frame" x="0.0" y="149" width="343" height="66.5"/>
@@ -199,8 +213,8 @@
                                     <constraint firstItem="UNA-eZ-XKn" firstAttribute="width" secondItem="R72-JV-SUI" secondAttribute="width" id="dgi-3z-Ivx"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espiritu, Nisperos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JI3-Qj-Jdz">
-                                <rect key="frame" x="16" y="630.5" width="134.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espiritu. Nisperos." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JI3-Qj-Jdz">
+                                <rect key="frame" x="16" y="631" width="139" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -223,6 +237,10 @@
                     <navigationItem key="navigationItem" title="Green View" id="RA4-Br-h8j">
                         <barButtonItem key="backBarButtonItem" title="Back" id="hr6-Zc-seo"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lblMsg" destination="yfc-jb-B0n" id="339-cv-gYu"/>
+                        <outlet property="txtMsg" destination="UNA-eZ-XKn" id="0yy-43-1ug"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mta-0Q-Nxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,7 +249,7 @@
         <!--Blue View-->
         <scene sceneID="yae-jt-HHW">
             <objects>
-                <viewController id="5cT-qZ-JxY" sceneMemberID="viewController">
+                <viewController id="5cT-qZ-JxY" customClass="ColorViewController" customModule="ios_10_10_17" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wcn-04-cXH"/>
                         <viewControllerLayoutGuide type="bottom" id="fWt-aH-5bt"/>
@@ -242,26 +260,32 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmm-IF-vGa">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="btnAny:" destination="5cT-qZ-JxY" eventType="touchUpInside" id="bcw-qa-9Zc"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wKl-Sj-GWU">
-                                <rect key="frame" x="16" y="226" width="343" height="216"/>
+                                <rect key="frame" x="16" y="226.5" width="343" height="215.5"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BcX-CI-P72">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BcX-CI-P72">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="66.5"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07b-Bv-DKR">
-                                        <rect key="frame" x="0.0" y="74.5" width="343" height="67"/>
+                                        <rect key="frame" x="0.0" y="74.5" width="343" height="66.5"/>
                                         <color key="backgroundColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Submit">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnMsg:" destination="5cT-qZ-JxY" eventType="touchUpInside" id="Mbg-gX-k1D"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPV-Cj-JoP">
-                                        <rect key="frame" x="0.0" y="149.5" width="343" height="66.5"/>
+                                        <rect key="frame" x="0.0" y="149" width="343" height="66.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -273,8 +297,8 @@
                                     <constraint firstItem="07b-Bv-DKR" firstAttribute="width" secondItem="wKl-Sj-GWU" secondAttribute="width" id="zb5-j8-ddi"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espiritu, Nisperos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyf-cw-QRm">
-                                <rect key="frame" x="16" y="630.5" width="134.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espiritu. Nisperos." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyf-cw-QRm">
+                                <rect key="frame" x="16" y="631" width="139" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -297,6 +321,10 @@
                     <navigationItem key="navigationItem" title="Blue View" id="AC4-1M-fF0">
                         <barButtonItem key="backBarButtonItem" title="Back" id="K4x-Mx-SWB"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lblMsg" destination="CPV-Cj-JoP" id="CAj-5W-QEC"/>
+                        <outlet property="txtMsg" destination="BcX-CI-P72" id="HGF-0F-djd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8P-Ne-OrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
