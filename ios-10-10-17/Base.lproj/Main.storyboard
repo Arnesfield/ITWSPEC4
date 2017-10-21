@@ -26,12 +26,28 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Human Anatomy" translatesAutoresizingMaskIntoConstraints="NO" id="KIh-B5-MKw">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espiritu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHg-xI-jIm">
+                                <rect key="frame" x="20" y="699" width="57.666666666666671" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nisperos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oM5-qc-voe">
+                                <rect key="frame" x="326" y="699" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="EHg-xI-jIm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9hV-bp-Ejk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EHg-xI-jIm" secondAttribute="bottom" constant="16" id="CGW-wu-jc5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KIh-B5-MKw" secondAttribute="bottom" id="DH9-nD-lcn"/>
                             <constraint firstAttribute="trailing" secondItem="KIh-B5-MKw" secondAttribute="trailing" id="Fwn-Ob-Tnt"/>
+                            <constraint firstItem="oM5-qc-voe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="N0B-M6-fMb"/>
                             <constraint firstItem="KIh-B5-MKw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cX8-js-Toy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oM5-qc-voe" secondAttribute="bottom" constant="16" id="nip-ik-8BR"/>
                             <constraint firstItem="KIh-B5-MKw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uMq-VV-oUo"/>
                         </constraints>
                     </view>
@@ -46,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.2" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1055.072463768116" y="122.28260869565219"/>
         </scene>
         <!--Human Anatomy List-->
         <scene sceneID="Iyc-Zn-Yum">
