@@ -63,11 +63,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nur-Ea-28T" id="vHk-gs-Nqz">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Digestive System" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="awq-cq-Ndn">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="364" height="43.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -83,11 +83,11 @@
                                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0gm-pq-00x" id="UqG-uK-s5n">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Urinary System" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ibG-hl-IBd">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="364" height="43.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -354,7 +354,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CQ8-xb-ysM">
                                 <rect key="frame" x="20" y="64" width="374" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">The small intestine is a long, thin tube about 1 inch in diameter and about 10 feet long that is part of the lower gastrointestinal tract. It is located just inferior to the stomach and takes up most of the space in the abdominal cavity. The entire small intestine is coiled like a hose and the inside surface is full of many ridges and folds. These folds are used to maximize the digestion of food and absorption of nutrients. By the time food leaves the small intestine, around 90% of all nutrients have been extracted from the food that entered it.</mutableString>
+                                <string key="text">The small intestine is a long, thin tube about 1 inch in diameter and about 10 feet long that is part of the lower gastrointestinal tract. It is located just inferior to the stomach and takes up most of the space in the abdominal cavity. The entire small intestine is coiled like a hose and the inside surface is full of many ridges and folds. These folds are used to maximize the digestion of food and absorption of nutrients. By the time food leaves the small intestine, around 90% of all nutrients have been extracted from the food that entered it.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -513,14 +513,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWh-DE-YdN">
-                                <rect key="frame" x="149" y="475" width="107" height="104"/>
+                                <rect key="frame" x="149" y="478" width="107" height="104"/>
                                 <state key="normal" image="urinary bladder"/>
                                 <connections>
                                     <segue destination="a1F-67-6To" kind="show" id="rXG-Z6-EIC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wg1-kR-HRm">
-                                <rect key="frame" x="155" y="268" width="104" height="237"/>
+                                <rect key="frame" x="155" y="261" width="104" height="237"/>
                                 <state key="normal" image="ureter"/>
                                 <connections>
                                     <segue destination="xof-0K-SgL" kind="show" id="zOD-jC-jv6"/>
@@ -531,11 +531,11 @@
                         <constraints>
                             <constraint firstItem="Wg1-kR-HRm" firstAttribute="centerX" secondItem="wG7-Qc-1rZ" secondAttribute="centerX" id="0iP-7t-4Rs"/>
                             <constraint firstItem="uWh-DE-YdN" firstAttribute="centerX" secondItem="wG7-Qc-1rZ" secondAttribute="centerX" multiplier="0.98" id="5Ts-lV-iJp"/>
-                            <constraint firstItem="Wg1-kR-HRm" firstAttribute="top" secondItem="qk0-AW-enO" secondAttribute="bottom" multiplier="0.55" id="N0w-hB-APy"/>
+                            <constraint firstItem="Wg1-kR-HRm" firstAttribute="top" secondItem="qk0-AW-enO" secondAttribute="bottom" multiplier="0.535" id="N0w-hB-APy"/>
                             <constraint firstItem="qk0-AW-enO" firstAttribute="centerX" secondItem="wG7-Qc-1rZ" secondAttribute="centerX" id="VnO-VI-wqP"/>
                             <constraint firstItem="qk0-AW-enO" firstAttribute="top" secondItem="bGr-Yh-UIv" secondAttribute="bottom" id="YJh-K6-fK0"/>
                             <constraint firstItem="qk0-AW-enO" firstAttribute="centerY" secondItem="wG7-Qc-1rZ" secondAttribute="centerY" multiplier="0.75" id="YjU-Om-nsi"/>
-                            <constraint firstItem="uWh-DE-YdN" firstAttribute="top" secondItem="Wg1-kR-HRm" secondAttribute="bottom" multiplier="0.94" id="twd-Le-J2u"/>
+                            <constraint firstItem="uWh-DE-YdN" firstAttribute="top" secondItem="Wg1-kR-HRm" secondAttribute="bottom" multiplier="0.96" id="twd-Le-J2u"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Urinary System" id="k6v-jb-02m">
@@ -544,7 +544,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wd-TU-g0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1790" y="1491"/>
+            <point key="canvasLocation" x="1790" y="1174"/>
         </scene>
         <!--Kidneys-->
         <scene sceneID="bIJ-9w-V0Z">
@@ -561,7 +561,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g6i-Yi-Ylb">
                                 <rect key="frame" x="20" y="64" width="374" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">The kidneys are a pair of bean-shaped organs found along the posterior wall of the abdominal cavity. The left kidney is located slightly higher than the right kidney because the right side of the liver is much larger than the left side. The kidneys, unlike the other organs of the abdominal cavity, are located posterior to the peritoneum and touch the muscles of the back. The kidneys are surrounded by a layer of adipose that holds them in place and protects them from physical damage. The kidneys filter metabolic wastes, excess ions, and chemicals from the blood to form urine.</mutableString>
+                                <string key="text">The kidneys are a pair of bean-shaped organs found along the posterior wall of the abdominal cavity. The left kidney is located slightly higher than the right kidney because the right side of the liver is much larger than the left side. The kidneys, unlike the other organs of the abdominal cavity, are located posterior to the peritoneum and touch the muscles of the back. The kidneys are surrounded by a layer of adipose that holds them in place and protects them from physical damage. The kidneys filter metabolic wastes, excess ions, and chemicals from the blood to form urine.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -578,7 +578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UdA-Mm-efG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2562" y="1490"/>
+            <point key="canvasLocation" x="2548" y="1174"/>
         </scene>
         <!--Ureters-->
         <scene sceneID="SDQ-uQ-Aoh">
@@ -595,7 +595,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t2V-En-KvE">
                                 <rect key="frame" x="20" y="64" width="374" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">The ureters are a pair of tubes that carry urine from the kidneys to the urinary bladder. The ureters are about 10 to 12 inches long and run on the left and right sides of the body parallel to the vertebral column. Gravity and peristalsis of smooth muscle tissue in the walls of the ureters move urine toward the urinary bladder. The ends of the ureters extend slightly into the urinary bladder and are sealed at the point of entry to the bladder by the ureterovesical valves. These valves prevent urine from flowing back towards the kidneys.</mutableString>
+                                <string key="text">The ureters are a pair of tubes that carry urine from the kidneys to the urinary bladder. The ureters are about 10 to 12 inches long and run on the left and right sides of the body parallel to the vertebral column. Gravity and peristalsis of smooth muscle tissue in the walls of the ureters move urine toward the urinary bladder. The ends of the ureters extend slightly into the urinary bladder and are sealed at the point of entry to the bladder by the ureterovesical valves. These valves prevent urine from flowing back towards the kidneys.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -612,7 +612,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyJ-eJ-ies" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3322" y="1490"/>
+            <point key="canvasLocation" x="3304" y="1174"/>
         </scene>
         <!--Urinary Bladder-->
         <scene sceneID="uFz-6L-9a5">
@@ -646,7 +646,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZF-vg-dej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4110" y="1490"/>
+            <point key="canvasLocation" x="4093" y="1174"/>
         </scene>
     </scenes>
     <resources>
