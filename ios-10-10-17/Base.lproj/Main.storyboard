@@ -36,6 +36,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Human Anatomy" id="JeT-cT-y6l">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="BWp-AF-YOw"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="aCq-3q-eXI">
                             <connections>
                                 <segue destination="vFa-Cc-jiC" kind="show" id="6S8-vK-Dg6"/>
@@ -47,7 +48,7 @@
             </objects>
             <point key="canvasLocation" x="1055.2" y="122.78860569715144"/>
         </scene>
-        <!--Human Anatomy-->
+        <!--Human Anatomy List-->
         <scene sceneID="Iyc-Zn-Yum">
             <objects>
                 <tableViewController id="vFa-Cc-jiC" sceneMemberID="viewController">
@@ -94,23 +95,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="f6b-oM-1N0" style="IBUITableViewCellStyleDefault" id="xmd-Jw-NQX">
-                                        <rect key="frame" x="0.0" y="88" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xmd-Jw-NQX" id="miw-i8-qEk">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f6b-oM-1N0">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wOg-yX-njD" kind="show" id="e7z-vg-De5"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -120,7 +107,7 @@
                             <outlet property="delegate" destination="vFa-Cc-jiC" id="bMl-BB-5oH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Human Anatomy" id="qZ4-px-8dM">
+                    <navigationItem key="navigationItem" title="Human Anatomy List" id="qZ4-px-8dM">
                         <barButtonItem key="backBarButtonItem" title="Back" id="AyO-pF-auI"/>
                     </navigationItem>
                 </tableViewController>
@@ -506,10 +493,168 @@
             </objects>
             <point key="canvasLocation" x="188" y="123"/>
         </scene>
+        <!--Urinary System-->
+        <scene sceneID="Kap-OO-q9h">
+            <objects>
+                <viewController id="wOg-yX-njD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bGr-Yh-UIv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ycf-hY-sZr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wG7-Qc-1rZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qk0-AW-enO">
+                                <rect key="frame" x="107" y="64" width="201" height="424"/>
+                                <state key="normal" image="kidneys"/>
+                                <connections>
+                                    <segue destination="GM9-H8-JY4" kind="show" id="4G5-f1-11g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWh-DE-YdN">
+                                <rect key="frame" x="149" y="475" width="107" height="104"/>
+                                <state key="normal" image="urinary bladder"/>
+                                <connections>
+                                    <segue destination="a1F-67-6To" kind="show" id="rXG-Z6-EIC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wg1-kR-HRm">
+                                <rect key="frame" x="155" y="268" width="104" height="237"/>
+                                <state key="normal" image="ureter"/>
+                                <connections>
+                                    <segue destination="xof-0K-SgL" kind="show" id="zOD-jC-jv6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wg1-kR-HRm" firstAttribute="centerX" secondItem="wG7-Qc-1rZ" secondAttribute="centerX" id="0iP-7t-4Rs"/>
+                            <constraint firstItem="uWh-DE-YdN" firstAttribute="centerX" secondItem="wG7-Qc-1rZ" secondAttribute="centerX" multiplier="0.98" id="5Ts-lV-iJp"/>
+                            <constraint firstItem="Wg1-kR-HRm" firstAttribute="top" secondItem="qk0-AW-enO" secondAttribute="bottom" multiplier="0.55" id="N0w-hB-APy"/>
+                            <constraint firstItem="qk0-AW-enO" firstAttribute="centerX" secondItem="wG7-Qc-1rZ" secondAttribute="centerX" id="VnO-VI-wqP"/>
+                            <constraint firstItem="qk0-AW-enO" firstAttribute="top" secondItem="bGr-Yh-UIv" secondAttribute="bottom" id="YJh-K6-fK0"/>
+                            <constraint firstItem="qk0-AW-enO" firstAttribute="centerY" secondItem="wG7-Qc-1rZ" secondAttribute="centerY" multiplier="0.75" id="YjU-Om-nsi"/>
+                            <constraint firstItem="uWh-DE-YdN" firstAttribute="top" secondItem="Wg1-kR-HRm" secondAttribute="bottom" multiplier="0.94" id="twd-Le-J2u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Urinary System" id="k6v-jb-02m">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rFg-iT-9bJ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wd-TU-g0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="1491"/>
+        </scene>
+        <!--Kidneys-->
+        <scene sceneID="bIJ-9w-V0Z">
+            <objects>
+                <viewController id="GM9-H8-JY4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lv2-kM-1wX"/>
+                        <viewControllerLayoutGuide type="bottom" id="JTe-bW-Bb5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qBf-1Z-3in">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g6i-Yi-Ylb">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">The kidneys are a pair of bean-shaped organs found along the posterior wall of the abdominal cavity. The left kidney is located slightly higher than the right kidney because the right side of the liver is much larger than the left side. The kidneys, unlike the other organs of the abdominal cavity, are located posterior to the peritoneum and touch the muscles of the back. The kidneys are surrounded by a layer of adipose that holds them in place and protects them from physical damage. The kidneys filter metabolic wastes, excess ions, and chemicals from the blood to form urine.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g6i-Yi-Ylb" firstAttribute="leading" secondItem="qBf-1Z-3in" secondAttribute="leadingMargin" id="AxZ-WR-bF3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g6i-Yi-Ylb" secondAttribute="trailing" id="Tdb-i9-nft"/>
+                            <constraint firstItem="g6i-Yi-Ylb" firstAttribute="top" secondItem="Lv2-kM-1wX" secondAttribute="bottom" id="f8F-mt-NfK"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="g6i-Yi-Ylb" secondAttribute="bottom" id="mHf-9G-S21"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kidneys" id="IMR-7j-2V4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UdA-Mm-efG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2562" y="1490"/>
+        </scene>
+        <!--Ureters-->
+        <scene sceneID="SDQ-uQ-Aoh">
+            <objects>
+                <viewController id="xof-0K-SgL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eRS-do-paB"/>
+                        <viewControllerLayoutGuide type="bottom" id="aKP-2h-OHN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pv4-hO-4c1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t2V-En-KvE">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">The ureters are a pair of tubes that carry urine from the kidneys to the urinary bladder. The ureters are about 10 to 12 inches long and run on the left and right sides of the body parallel to the vertebral column. Gravity and peristalsis of smooth muscle tissue in the walls of the ureters move urine toward the urinary bladder. The ends of the ureters extend slightly into the urinary bladder and are sealed at the point of entry to the bladder by the ureterovesical valves. These valves prevent urine from flowing back towards the kidneys.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="t2V-En-KvE" secondAttribute="bottom" id="GA9-hb-rPt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t2V-En-KvE" secondAttribute="trailing" id="PqV-VH-X2P"/>
+                            <constraint firstItem="t2V-En-KvE" firstAttribute="leading" secondItem="pv4-hO-4c1" secondAttribute="leadingMargin" id="ngF-b9-6cx"/>
+                            <constraint firstItem="t2V-En-KvE" firstAttribute="top" secondItem="eRS-do-paB" secondAttribute="bottom" id="sxW-JX-AmC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ureters" id="NOp-Up-U2m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyJ-eJ-ies" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3322" y="1490"/>
+        </scene>
+        <!--Urinary Bladder-->
+        <scene sceneID="uFz-6L-9a5">
+            <objects>
+                <viewController id="a1F-67-6To" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="npI-aD-ffu"/>
+                        <viewControllerLayoutGuide type="bottom" id="TeQ-ed-aAO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wZr-gl-Teb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hVW-YB-Ezk">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The urinary bladder is a sac-like hollow organ used for the storage of urine. The urinary bladder is located along the body’s midline at the inferior end of the pelvis. Urine entering the urinary bladder from the ureters slowly fills the hollow space of the bladder and stretches its elastic walls. The walls of the bladder allow it to stretch to hold anywhere from 600 to 800 milliliters of urine.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hVW-YB-Ezk" firstAttribute="leading" secondItem="wZr-gl-Teb" secondAttribute="leadingMargin" id="FK2-1T-S1y"/>
+                            <constraint firstItem="hVW-YB-Ezk" firstAttribute="top" secondItem="npI-aD-ffu" secondAttribute="bottom" id="ICx-Im-g7n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hVW-YB-Ezk" secondAttribute="trailing" id="oXL-io-O1o"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="hVW-YB-Ezk" secondAttribute="bottom" id="rud-O8-Sc7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Urinary Bladder" id="mh8-MD-kAm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZF-vg-dej" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4110" y="1490"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Human Anatomy" width="798" height="1200"/>
+        <image name="kidneys" width="201" height="135"/>
         <image name="the-digestive-system" width="3150" height="3532"/>
+        <image name="ureter" width="104" height="237"/>
+        <image name="urinary bladder" width="107" height="104"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bP5-ei-SaD"/>
