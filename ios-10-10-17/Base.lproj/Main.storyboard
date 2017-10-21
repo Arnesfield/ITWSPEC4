@@ -158,25 +158,73 @@
                                 <rect key="frame" x="118" y="372" width="96" height="67"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybi-rS-ID9">
+                                <rect key="frame" x="214" y="372" width="66" height="101"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8l-VL-Ppy">
+                                <rect key="frame" x="188" y="473" width="79" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B97-bs-3ho">
+                                <rect key="frame" x="155" y="507" width="116" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEp-N1-GyR">
+                                <rect key="frame" x="161" y="541" width="92" height="101"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtR-yf-sBC">
+                                <rect key="frame" x="253" y="541" width="29" height="94"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58c-2I-7i0">
+                                <rect key="frame" x="140" y="541" width="21" height="101"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="B97-bs-3ho" firstAttribute="height" secondItem="WgX-Ss-CwB" secondAttribute="height" multiplier="0.05" id="0Lj-OY-2R0"/>
+                            <constraint firstItem="G8l-VL-Ppy" firstAttribute="top" secondItem="Ybi-rS-ID9" secondAttribute="bottom" id="0SC-wQ-rkR"/>
                             <constraint firstItem="1EE-Ph-EUx" firstAttribute="top" secondItem="ZLE-pu-Jia" secondAttribute="bottom" id="2MT-NV-Hi9"/>
                             <constraint firstItem="ZLE-pu-Jia" firstAttribute="centerX" secondItem="PoT-xZ-Vdg" secondAttribute="centerX" multiplier="0.95" id="534-t6-O1m"/>
                             <constraint firstItem="WgX-Ss-CwB" firstAttribute="top" secondItem="e73-JA-DCl" secondAttribute="bottom" id="5N3-XJ-oAs"/>
+                            <constraint firstItem="nEp-N1-GyR" firstAttribute="height" secondItem="WgX-Ss-CwB" secondAttribute="height" multiplier="0.15" id="7I5-k5-uic"/>
                             <constraint firstItem="u5N-88-xSF" firstAttribute="top" secondItem="1EE-Ph-EUx" secondAttribute="bottom" id="901-8C-1uP"/>
                             <constraint firstItem="ZLE-pu-Jia" firstAttribute="top" secondItem="e73-JA-DCl" secondAttribute="bottom" multiplier="1.4" id="Dhe-8E-e3d"/>
                             <constraint firstItem="ZLE-pu-Jia" firstAttribute="height" secondItem="WgX-Ss-CwB" secondAttribute="height" multiplier="0.28" id="EcG-j3-ArS"/>
+                            <constraint firstItem="B97-bs-3ho" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.28" id="Fov-i0-bFA"/>
+                            <constraint firstItem="nEp-N1-GyR" firstAttribute="centerX" secondItem="PoT-xZ-Vdg" secondAttribute="centerX" id="Hf3-ZH-2EL"/>
+                            <constraint firstItem="Ybi-rS-ID9" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.16" id="InQ-0r-QYa"/>
+                            <constraint firstItem="Ybi-rS-ID9" firstAttribute="leading" secondItem="u5N-88-xSF" secondAttribute="trailing" id="Nqf-ch-l4B"/>
+                            <constraint firstItem="58c-2I-7i0" firstAttribute="top" secondItem="nEp-N1-GyR" secondAttribute="top" id="P0K-lU-3Cw"/>
+                            <constraint firstItem="Ybi-rS-ID9" firstAttribute="top" secondItem="1EE-Ph-EUx" secondAttribute="bottom" id="QMx-IL-LV1"/>
                             <constraint firstItem="tgD-JG-fhe" firstAttribute="top" secondItem="WgX-Ss-CwB" secondAttribute="bottom" id="RTg-aB-7t4"/>
+                            <constraint firstItem="CtR-yf-sBC" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.07" id="RUC-7n-Gbx"/>
                             <constraint firstItem="1EE-Ph-EUx" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.15" id="SX0-1M-EdP"/>
+                            <constraint firstItem="58c-2I-7i0" firstAttribute="height" secondItem="WgX-Ss-CwB" secondAttribute="height" multiplier="0.15" id="TuO-Ob-ch8"/>
+                            <constraint firstItem="Ybi-rS-ID9" firstAttribute="height" secondItem="WgX-Ss-CwB" secondAttribute="height" multiplier="0.15" id="Wln-Ed-r9s"/>
                             <constraint firstItem="1EE-Ph-EUx" firstAttribute="centerX" secondItem="PoT-xZ-Vdg" secondAttribute="centerX" multiplier="1.02" id="Yz8-PC-kDE"/>
                             <constraint firstItem="WgX-Ss-CwB" firstAttribute="leading" secondItem="PoT-xZ-Vdg" secondAttribute="leading" id="a2L-gk-xJ5"/>
+                            <constraint firstItem="G8l-VL-Ppy" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.19" id="aEH-iL-Ydf"/>
+                            <constraint firstItem="G8l-VL-Ppy" firstAttribute="centerX" secondItem="PoT-xZ-Vdg" secondAttribute="centerX" multiplier="1.1" id="cgE-r8-jSV"/>
                             <constraint firstItem="u5N-88-xSF" firstAttribute="height" secondItem="WgX-Ss-CwB" secondAttribute="height" multiplier="0.1" id="ch2-IQ-0eG"/>
                             <constraint firstItem="u5N-88-xSF" firstAttribute="centerX" secondItem="PoT-xZ-Vdg" secondAttribute="centerX" multiplier="0.8" id="dFo-Gi-8OH"/>
+                            <constraint firstItem="B97-bs-3ho" firstAttribute="centerX" secondItem="PoT-xZ-Vdg" secondAttribute="centerX" multiplier="1.03" id="gPG-ID-UNi"/>
+                            <constraint firstItem="B97-bs-3ho" firstAttribute="top" secondItem="G8l-VL-Ppy" secondAttribute="bottom" id="i07-qm-peS"/>
+                            <constraint firstItem="G8l-VL-Ppy" firstAttribute="height" secondItem="WgX-Ss-CwB" secondAttribute="height" multiplier="0.05" id="iut-Ri-P5a"/>
+                            <constraint firstItem="CtR-yf-sBC" firstAttribute="height" secondItem="WgX-Ss-CwB" secondAttribute="height" multiplier="0.14" id="j2G-rD-hfO"/>
+                            <constraint firstItem="CtR-yf-sBC" firstAttribute="top" secondItem="B97-bs-3ho" secondAttribute="bottom" id="k2p-5v-9im"/>
                             <constraint firstAttribute="trailing" secondItem="WgX-Ss-CwB" secondAttribute="trailing" id="kxX-Nj-voK"/>
+                            <constraint firstItem="58c-2I-7i0" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.05" id="lI1-gq-GoI"/>
+                            <constraint firstItem="CtR-yf-sBC" firstAttribute="leading" secondItem="nEp-N1-GyR" secondAttribute="trailing" id="oe9-Bf-dus"/>
                             <constraint firstItem="ZLE-pu-Jia" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.25" id="r94-xh-WgJ"/>
+                            <constraint firstItem="nEp-N1-GyR" firstAttribute="leading" secondItem="58c-2I-7i0" secondAttribute="trailing" id="s7s-pB-Cxs"/>
+                            <constraint firstItem="nEp-N1-GyR" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.22" id="sNA-Ku-f9J"/>
                             <constraint firstItem="1EE-Ph-EUx" firstAttribute="height" secondItem="WgX-Ss-CwB" secondAttribute="height" multiplier="0.14" id="ujL-Vf-rd5"/>
                             <constraint firstItem="u5N-88-xSF" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.23" id="vu6-W6-VEP"/>
+                            <constraint firstItem="nEp-N1-GyR" firstAttribute="top" secondItem="B97-bs-3ho" secondAttribute="bottom" id="yNN-dr-YxI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Digestive System" id="nji-Dk-G9Q">
