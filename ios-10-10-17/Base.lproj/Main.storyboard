@@ -145,60 +145,57 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLE-pu-Jia">
                                 <rect key="frame" x="145" y="90" width="104" height="188"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="Xmg-Zt-XXb" kind="show" id="8J5-ol-MNM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EE-Ph-EUx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EE-Ph-EUx">
                                 <rect key="frame" x="180" y="278" width="62" height="94"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="qIe-es-wkW" kind="show" id="eiL-nz-Spy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5N-88-xSF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5N-88-xSF">
                                 <rect key="frame" x="118" y="372" width="96" height="67"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="gJm-oU-mCH" kind="show" id="2bc-bL-p6K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybi-rS-ID9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybi-rS-ID9">
                                 <rect key="frame" x="214" y="372" width="66" height="101"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="YZw-Mm-pcz" kind="show" id="C2D-jH-gfT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8l-VL-Ppy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8l-VL-Ppy">
                                 <rect key="frame" x="188" y="473" width="79" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="AeF-e9-7fL" kind="show" id="6CW-uS-1JC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B97-bs-3ho">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B97-bs-3ho">
                                 <rect key="frame" x="155" y="507" width="116" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="6w6-9P-RVp" kind="show" id="eNC-u1-dGb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEp-N1-GyR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEp-N1-GyR">
                                 <rect key="frame" x="161" y="541" width="92" height="101"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="8I2-cB-FFN" kind="show" id="Rck-Qn-Z84"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtR-yf-sBC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtR-yf-sBC">
                                 <rect key="frame" x="253" y="541" width="29" height="94"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="6w6-9P-RVp" kind="show" id="bP5-ei-SaD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58c-2I-7i0">
-                                <rect key="frame" x="140" y="541" width="21" height="101"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58c-2I-7i0">
+                                <rect key="frame" x="136" y="541" width="25" height="101"/>
+                                <connections>
+                                    <segue destination="6w6-9P-RVp" kind="show" id="5jl-H4-6S2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -235,7 +232,7 @@
                             <constraint firstItem="CtR-yf-sBC" firstAttribute="height" secondItem="WgX-Ss-CwB" secondAttribute="height" multiplier="0.14" id="j2G-rD-hfO"/>
                             <constraint firstItem="CtR-yf-sBC" firstAttribute="top" secondItem="B97-bs-3ho" secondAttribute="bottom" id="k2p-5v-9im"/>
                             <constraint firstAttribute="trailing" secondItem="WgX-Ss-CwB" secondAttribute="trailing" id="kxX-Nj-voK"/>
-                            <constraint firstItem="58c-2I-7i0" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.05" id="lI1-gq-GoI"/>
+                            <constraint firstItem="58c-2I-7i0" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.06" id="lI1-gq-GoI"/>
                             <constraint firstItem="CtR-yf-sBC" firstAttribute="leading" secondItem="nEp-N1-GyR" secondAttribute="trailing" id="oe9-Bf-dus"/>
                             <constraint firstItem="ZLE-pu-Jia" firstAttribute="width" secondItem="WgX-Ss-CwB" secondAttribute="width" multiplier="0.25" id="r94-xh-WgJ"/>
                             <constraint firstItem="nEp-N1-GyR" firstAttribute="leading" secondItem="58c-2I-7i0" secondAttribute="trailing" id="s7s-pB-Cxs"/>
@@ -275,10 +272,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yY6-PV-Ky4" firstAttribute="leading" secondItem="ixC-kt-Cza" secondAttribute="leadingMargin" id="foT-N1-LlQ"/>
-                            <constraint firstItem="yY6-PV-Ky4" firstAttribute="trailing" secondItem="ixC-kt-Cza" secondAttribute="trailingMargin" id="qK6-tk-h6y"/>
-                            <constraint firstItem="sBX-xf-rYG" firstAttribute="top" secondItem="yY6-PV-Ky4" secondAttribute="bottom" id="wYo-Ud-SpM"/>
-                            <constraint firstItem="yY6-PV-Ky4" firstAttribute="top" secondItem="BTW-c4-Ah2" secondAttribute="bottom" id="zPG-h7-Alz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yY6-PV-Ky4" secondAttribute="trailing" id="E9q-Pf-z8D"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="yY6-PV-Ky4" secondAttribute="bottom" id="IYa-lh-cAf"/>
+                            <constraint firstItem="yY6-PV-Ky4" firstAttribute="leading" secondItem="ixC-kt-Cza" secondAttribute="leadingMargin" id="Xvx-e9-VjA"/>
+                            <constraint firstItem="yY6-PV-Ky4" firstAttribute="top" secondItem="BTW-c4-Ah2" secondAttribute="bottom" id="nrd-CY-WR8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mouth" id="3lT-xt-GYQ"/>
@@ -514,4 +511,7 @@
         <image name="Human Anatomy" width="798" height="1200"/>
         <image name="the-digestive-system" width="3150" height="3532"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bP5-ei-SaD"/>
+    </inferredMetricsTieBreakers>
 </document>
