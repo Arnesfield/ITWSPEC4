@@ -153,18 +153,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EE-Ph-EUx">
                                 <rect key="frame" x="180" y="278" width="62" height="94"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="qIe-es-wkW" kind="show" id="eiL-nz-Spy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5N-88-xSF">
                                 <rect key="frame" x="118" y="372" width="96" height="67"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="gJm-oU-mCH" kind="show" id="2bc-bL-p6K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybi-rS-ID9">
                                 <rect key="frame" x="214" y="372" width="66" height="101"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="YZw-Mm-pcz" kind="show" id="C2D-jH-gfT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8l-VL-Ppy">
                                 <rect key="frame" x="188" y="473" width="79" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="AeF-e9-7fL" kind="show" id="6CW-uS-1JC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B97-bs-3ho">
                                 <rect key="frame" x="155" y="507" width="116" height="34"/>
@@ -173,10 +185,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEp-N1-GyR">
                                 <rect key="frame" x="161" y="541" width="92" height="101"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="8I2-cB-FFN" kind="show" id="Rck-Qn-Z84"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtR-yf-sBC">
                                 <rect key="frame" x="253" y="541" width="29" height="94"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="6w6-9P-RVp" kind="show" id="bP5-ei-SaD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58c-2I-7i0">
                                 <rect key="frame" x="140" y="541" width="21" height="101"/>
@@ -268,6 +286,210 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Op-GB-TKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3396" y="-355"/>
+        </scene>
+        <!--Pancreas-->
+        <scene sceneID="AVM-lq-bph">
+            <objects>
+                <viewController id="AeF-e9-7fL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q2N-RM-OyD"/>
+                        <viewControllerLayoutGuide type="bottom" id="aEm-oC-aiO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UAT-bb-1Tm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JH2-w8-zgn">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The pancreas is a large gland located just inferior and posterior to the stomach. It is about 6 inches long and shaped like short, lumpy snake with its “head” connected to the duodenum and its “tail” pointing to the left wall of the abdominal cavity. The pancreas secretes digestive enzymes into the small intestine to complete the chemical digestion of foods.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JH2-w8-zgn" firstAttribute="top" secondItem="Q2N-RM-OyD" secondAttribute="bottom" id="Ea5-B7-E7h"/>
+                            <constraint firstItem="aEm-oC-aiO" firstAttribute="top" secondItem="JH2-w8-zgn" secondAttribute="bottom" id="IOD-R8-FhE"/>
+                            <constraint firstItem="JH2-w8-zgn" firstAttribute="trailing" secondItem="UAT-bb-1Tm" secondAttribute="trailingMargin" id="NpR-qW-RRF"/>
+                            <constraint firstItem="JH2-w8-zgn" firstAttribute="leading" secondItem="UAT-bb-1Tm" secondAttribute="leadingMargin" id="T0C-cc-XeP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pancreas" id="Sfg-qq-YlZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2PC-ho-X14" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3396" y="351"/>
+        </scene>
+        <!--Large Intestine-->
+        <scene sceneID="UXw-kB-hQ8">
+            <objects>
+                <viewController id="6w6-9P-RVp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="590-Fa-uSh"/>
+                        <viewControllerLayoutGuide type="bottom" id="GWZ-Hz-YJf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8J5-dG-67Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W07-04-gzd">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The large intestine is a long, thick tube about 2 1⁄2 inches in diameter and about 5 feet long. It is located just inferior to the stomach and wraps around the superior and lateral border of the small intestine. The large intestine absorbs water and contains many symbiotic bacteria that aid in the breaking down of wastes to extract some small amounts of nutrients. Feces in the large intestine exit the body through the anal canal.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W07-04-gzd" firstAttribute="top" secondItem="590-Fa-uSh" secondAttribute="bottom" id="11W-Q5-2rw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W07-04-gzd" secondAttribute="trailing" id="a2E-JH-L9p"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="W07-04-gzd" secondAttribute="bottom" id="aVp-ph-mpK"/>
+                            <constraint firstItem="W07-04-gzd" firstAttribute="leading" secondItem="8J5-dG-67Q" secondAttribute="leadingMargin" id="asf-H9-F6n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Large Intestine" id="IOS-gF-0SL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oh8-NB-gGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4145" y="351"/>
+        </scene>
+        <!--Small Intestine-->
+        <scene sceneID="D80-uy-bxq">
+            <objects>
+                <viewController id="8I2-cB-FFN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3W2-Zw-Hfy"/>
+                        <viewControllerLayoutGuide type="bottom" id="BFy-Qv-fiD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aDB-gE-yiw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CQ8-xb-ysM">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">The small intestine is a long, thin tube about 1 inch in diameter and about 10 feet long that is part of the lower gastrointestinal tract. It is located just inferior to the stomach and takes up most of the space in the abdominal cavity. The entire small intestine is coiled like a hose and the inside surface is full of many ridges and folds. These folds are used to maximize the digestion of food and absorption of nutrients. By the time food leaves the small intestine, around 90% of all nutrients have been extracted from the food that entered it.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CQ8-xb-ysM" firstAttribute="top" secondItem="3W2-Zw-Hfy" secondAttribute="bottom" id="H4m-z2-oLS"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="CQ8-xb-ysM" secondAttribute="bottom" id="Ld8-7K-9aa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CQ8-xb-ysM" secondAttribute="trailing" id="PEb-v5-pFH"/>
+                            <constraint firstItem="CQ8-xb-ysM" firstAttribute="leading" secondItem="aDB-gE-yiw" secondAttribute="leadingMargin" id="t8f-w1-yhD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Small Intestine" id="lyz-42-3uv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDY-38-nwt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4912" y="351"/>
+        </scene>
+        <!--Esophagus-->
+        <scene sceneID="r22-gR-iSk">
+            <objects>
+                <viewController id="qIe-es-wkW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p1X-vs-CoL"/>
+                        <viewControllerLayoutGuide type="bottom" id="mZZ-L2-tg2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JZf-jX-di8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XOc-a4-cho">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The esophagus is a muscular tube connecting the pharynx to the stomach that is part of the upper gastrointestinal tract. It carries swallowed masses of chewed food along its length. At the inferior end of the esophagus is a muscular ring called the lower esophageal sphincter or cardiac sphincter. The function of this sphincter is to close of the end of the esophagus and trap food in the stomach.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XOc-a4-cho" secondAttribute="trailing" id="Ejg-h7-677"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="XOc-a4-cho" secondAttribute="bottom" id="O19-dU-lmg"/>
+                            <constraint firstItem="XOc-a4-cho" firstAttribute="leading" secondItem="JZf-jX-di8" secondAttribute="leadingMargin" id="fBx-Te-aaG"/>
+                            <constraint firstItem="XOc-a4-cho" firstAttribute="top" secondItem="p1X-vs-CoL" secondAttribute="bottom" id="w9B-1Z-qY4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Esophagus" id="o70-2g-hZA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Zo-Kf-1i1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4145" y="-355"/>
+        </scene>
+        <!--Liver-->
+        <scene sceneID="duF-BR-OaA">
+            <objects>
+                <viewController id="gJm-oU-mCH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jWw-y0-vUy"/>
+                        <viewControllerLayoutGuide type="bottom" id="x6M-l8-pCL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tw1-wo-DvC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eZO-XV-Nml">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The liver is a roughly triangular accessory organ of the digestive system located to the right of the stomach, just inferior to the diaphragm and superior to the small intestine. The liver weighs about 3 pounds and is the second largest organ in the body. The liver has many different functions in the body, but the main function of the liver in digestion is the production of bile and its secretion into the small intestine.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eZO-XV-Nml" firstAttribute="top" secondItem="jWw-y0-vUy" secondAttribute="bottom" id="6k2-GP-u1Z"/>
+                            <constraint firstItem="eZO-XV-Nml" firstAttribute="leading" secondItem="Tw1-wo-DvC" secondAttribute="leadingMargin" id="VjF-lU-M4T"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="eZO-XV-Nml" secondAttribute="bottom" id="YYc-Cf-KWA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eZO-XV-Nml" secondAttribute="trailing" id="lCV-YC-Ir7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Liver" id="3qb-Fx-0la"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfG-zP-Rmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4912" y="-360"/>
+        </scene>
+        <!--Stomach-->
+        <scene sceneID="GSY-4v-TqF">
+            <objects>
+                <viewController id="YZw-Mm-pcz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z0u-Wk-aOS"/>
+                        <viewControllerLayoutGuide type="bottom" id="emy-ti-gLg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Eb-Bx-7O9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b3J-bE-rI6">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The stomach is a muscular sac that is located on the left side of the abdominal cavity, just inferior to the diaphragm. In an average person, the stomach is about the size of their two fists placed next to each other. This major organ acts as a storage tank for food so that the body has time to digest large meals properly. The stomach also contains hydrochloric acid and digestive enzymes that continue the digestion of food that began in the mouth.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b3J-bE-rI6" firstAttribute="trailing" secondItem="3Eb-Bx-7O9" secondAttribute="trailingMargin" id="14r-7o-Yfg"/>
+                            <constraint firstItem="emy-ti-gLg" firstAttribute="top" secondItem="b3J-bE-rI6" secondAttribute="bottom" id="SdN-2u-gwc"/>
+                            <constraint firstItem="b3J-bE-rI6" firstAttribute="top" secondItem="z0u-Wk-aOS" secondAttribute="bottom" id="WwL-BU-RQz"/>
+                            <constraint firstItem="b3J-bE-rI6" firstAttribute="leading" secondItem="3Eb-Bx-7O9" secondAttribute="leadingMargin" id="ahZ-Ax-lDa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stomach" id="GZF-ju-bwx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwU-2N-3Zr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5642" y="-354"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="05n-qI-DNq">
