@@ -51,7 +51,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             lblRes.text = String(res)
         }
         else {
-            lblRes.text = ""
+            lblRes.text = "Error"
         }
     }
 
