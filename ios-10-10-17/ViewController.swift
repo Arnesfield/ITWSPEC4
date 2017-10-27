@@ -33,8 +33,50 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
     }
     
-    private let operators = ["+", "-", "*", "÷", "%"]
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // check what component
+        // set row in n
+        
+        if (component == 0) {
+            n1 = row
+        }
+        else if component == 1 {
+            op = row
+        }
+        else if component == 2 {
+            n2 = row
+        }
+        
+        if let res = self.solve(Float(n1), Float(n2)) {
+            lblRes.text = String(res)
+        }
+        else {
+            lblRes.text = ""
+        }
+    }
 
+    
+    private func solve(_ n: Float?, _ m: Float?) -> Float? {
+        if n == nil || m == nil {
+            return nil
+        }
+        let n1 = n!, n2 = m!
+        // solve
+        switch op {
+        case 0: return n1 + n2
+        case 1: return n1 - n2
+        case 2: return n1 * n2
+        case 3:
+            return n2 == 0 ? nil : n1 / n2
+        default:
+            return nil
+        }
+    }
+    
+    private let operators = ["+", "-", "*", "÷"]
+    private var n1: Int = 0
+    private var n2: Int = 0
+    private var op: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
