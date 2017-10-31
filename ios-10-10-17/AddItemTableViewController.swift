@@ -1,49 +1,63 @@
 //
-//  ItemTableViewController.swift
+//  AddItemTableViewController.swift
 //  Activity5
 //
-//  Created by Jefferson Rylee on 31/10/2017.
+//  Created by Jefferson Rylee on 01/11/2017.
 //  Copyright © 2017 iOS Arnesfield. All rights reserved.
 //
 
 import UIKit
 
-class ItemTableViewController: UITableViewController {
-
-    private static var ITEMS: [Item] = [
-        Item(name: "Apple", desc: "Red Apple", price: 18.50, imgSrc: "apple"),
-        Item(name: "School Bag", desc: "To keep things", price: 249.5, imgSrc: "bag"),
-        Item(name: "Beverage", desc: "Refreshments first", price: 14, imgSrc: "beverage"),
-        Item(name: "Book", desc: "For learning", price: 50.6, imgSrc: "book"),
-        Item(name: "Calculator", desc: "To calculate things", price: 359.5, imgSrc: "calculator"),
-        Item(name: "Cherry", desc: "Sweet and tasty", price: 30.75, imgSrc: "cherry"),
-        Item(name: "Cup of Coffee", desc: "Hyper yourself", price: 56, imgSrc: "coffee"),
-        Item(name: "Food", desc: "Fill your stomach", price: 160, imgSrc: "food"),
-        Item(name: "Hand Soap", desc: "Clean your hands", price: 120, imgSrc: "handsoap"),
-        Item(name: "Notebook", desc: "To be written on", price: 28.75, imgSrc: "notebook"),
-        Item(name: "Orange", desc: "Sweet Orange", price: 19.00, imgSrc: "orange"),
-        Item(name: "Paper", desc: "To be written on", price: 22, imgSrc: "paper"),
-        Item(name: "Pencil", desc: "Write things", price: 10, imgSrc: "pencil"),
-        Item(name: "Raspberry", desc: "1 pack of sweet raspberry", price: 35.00, imgSrc: "raspberry"),
-        Item(name: "Tissues", desc: "Wipe things", price: 30, imgSrc: "tissues"),
-        Item(name: "Bottled Water", desc: "Cool drink", price: 15, imgSrc: "water"),
-    ]
-    
-    func addItem(_ addedItem: Item?) {
-        if let item = addedItem {
-            ItemTableViewController.ITEMS.append(item)
+class AddItemTableViewController: UITableViewController {
+    @IBOutlet weak var itemName: UITextField!
+    @IBOutlet weak var itemDesc: UITextView!
+    @IBOutlet weak var itemPrice: UITextField!
+    @IBOutlet weak var lblError: UILabel!
+    @IBAction func btnClear(_ sender: Any) {
+        self.itemName.text = ""
+        self.itemDesc.text = ""
+        self.itemPrice.text = ""
+        lblError.text = "All fields are required."
+    }
+    private func btnSave() -> Bool {
+        guard let name = itemName.text, !name.isEmpty else {
+            lblError.text = "Name is required."
+            return false
         }
+        
+        guard let desc = itemDesc.text, !desc.isEmpty else {
+            lblError.text = "Description is required."
+            return false
+        }
+        
+        guard let sPrice = itemPrice.text, let price = Double(sPrice) else {
+            lblError.text = "Price should be a number."
+            return false
+        }
+        
+        self.item = Item(name: name, desc: desc, price: price, imgSrc: "cart")
+        return true
+    }
+    
+    private var item: Item?
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let willSave: Bool = btnSave()
+        if willSave {
+            lblError.text = "All fields are required."
+        }
+        return willSave
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! ItemViewController
-        if let indexPath = self.tableView.indexPathForSelectedRow {
-            vc.currItem = ItemTableViewController.ITEMS[indexPath.row]
-        }
+        let vc = segue.destination as! ItemTableViewController
+        vc.addItem(self.item)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblError.text = "All fields are required."
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -59,25 +73,29 @@ class ItemTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    /*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
+    */
 
+    /*
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return ItemTableViewController.ITEMS.count
+        return 0
     }
+    */
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "itemID", for: indexPath)
-        cell.textLabel?.text = ItemTableViewController.ITEMS[indexPath.row].name
-        cell.detailTextLabel?.text = "₱\(ItemTableViewController.ITEMS[indexPath.row].price)"
-        cell.imageView?.image = UIImage(named: ItemTableViewController.ITEMS[indexPath.row].imgSrc)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
