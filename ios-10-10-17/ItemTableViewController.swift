@@ -12,12 +12,29 @@ class ItemTableViewController: UITableViewController {
 
     private let ITEMS: [Item] = [
         Item(name: "Apple", desc: "Red Apple", price: 18.50, imgSrc: "apple"),
-        Item(name: "Orange", desc: "Swwet Orange", price: 19.00, imgSrc: "orange"),
-        Item(name: "Mango", desc: "Yellow Swwet Mango", price: 15.00, imgSrc: "mango"),
-        Item(name: "Banana", desc: "Banana from Davao", price: 7.75, imgSrc: "banana"),
-        Item(name: "Guava", desc: "Big Guava", price: 20.00, imgSrc: "guava"),
-        Item(name: "Strawberry", desc: "1 pack of sweet strawberry", price: 35.00, imgSrc: "strawberry")
+        Item(name: "School Bag", desc: "To keep things", price: 249.5, imgSrc: "bag"),
+        Item(name: "Beverage", desc: "Refreshments first", price: 14, imgSrc: "beverage"),
+        Item(name: "Book", desc: "For learning", price: 50.6, imgSrc: "book"),
+        Item(name: "Calculator", desc: "To calculate things", price: 359.5, imgSrc: "calculator"),
+        Item(name: "Cherry", desc: "Sweet and tasty", price: 30.75, imgSrc: "cherry"),
+        Item(name: "Cup of Coffee", desc: "Hyper yourself", price: 56, imgSrc: "coffee"),
+        Item(name: "Food", desc: "Fill your stomach", price: 160, imgSrc: "food"),
+        Item(name: "Hand Soap", desc: "Clean your hands", price: 120, imgSrc: "handsoap"),
+        Item(name: "Notebook", desc: "To be written on", price: 28.75, imgSrc: "notebook"),
+        Item(name: "Orange", desc: "Sweet Orange", price: 19.00, imgSrc: "orange"),
+        Item(name: "Paper", desc: "To be written on", price: 22, imgSrc: "paper"),
+        Item(name: "Pencil", desc: "Write things", price: 10, imgSrc: "pencil"),
+        Item(name: "Raspberry", desc: "1 pack of sweet raspberry", price: 35.00, imgSrc: "raspberry"),
+        Item(name: "Tissues", desc: "Wipe things", price: 30, imgSrc: "tissues"),
+        Item(name: "Bottled Water", desc: "Cool drink", price: 15, imgSrc: "water"),
     ]
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ItemViewController
+        if let indexPath = self.tableView.indexPathForSelectedRow {
+            vc.currItem = ITEMS[indexPath.row]
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +68,7 @@ class ItemTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemID", for: indexPath)
         cell.textLabel?.text = ITEMS[indexPath.row].name
         cell.detailTextLabel?.text = "₱\(ITEMS[indexPath.row].price)"
+        cell.imageView?.image = UIImage(named: ITEMS[indexPath.row].imgSrc)
         return cell
     }
     
