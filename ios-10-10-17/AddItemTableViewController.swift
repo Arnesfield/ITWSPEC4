@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddItemTableViewController: UITableViewController {
+class AddItemTableViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var itemName: UITextField!
     @IBOutlet weak var itemDesc: UITextView!
     @IBOutlet weak var itemPrice: UITextField!
@@ -18,8 +18,11 @@ class AddItemTableViewController: UITableViewController {
         self.itemDesc.text = ""
         self.itemPrice.text = ""
         lblError.text = "All fields are required."
+        hideKeyboard()
     }
     private func btnSave() -> Bool {
+        hideKeyboard()
+        
         guard let name = itemName.text, !name.isEmpty else {
             lblError.text = "Name is required."
             return false
@@ -30,12 +33,12 @@ class AddItemTableViewController: UITableViewController {
             return false
         }
         
-        guard let sPrice = itemPrice.text, let price = Double(sPrice) else {
-            lblError.text = "Price should be a number."
+        guard let sPrice = itemPrice.text, let price = Double(sPrice), price >= 0 else {
+            lblError.text = "Price should be 0 or a positive number."
             return false
         }
         
-        self.item = Item(name: name, desc: desc, price: price, imgSrc: "cart")
+        self.item = Item(name: name, desc: desc, price: abs(price), imgSrc: "cart")
         return true
     }
     
@@ -44,7 +47,7 @@ class AddItemTableViewController: UITableViewController {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         let willSave: Bool = btnSave()
         if willSave {
-            lblError.text = "All fields are required."
+            btnClear(0)
         }
         return willSave
     }
@@ -53,9 +56,22 @@ class AddItemTableViewController: UITableViewController {
         let vc = segue.destination as! ItemTableViewController
         vc.addItem(self.item)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    private func hideKeyboard() {
+        itemName.resignFirstResponder()
+        itemPrice.resignFirstResponder()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        itemName.delegate = self
+        itemPrice.delegate = self
         
         lblError.text = "All fields are required."
 

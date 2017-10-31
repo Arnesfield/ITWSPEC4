@@ -31,7 +31,7 @@ class ItemTableViewController: UITableViewController {
     
     func addItem(_ addedItem: Item?) {
         if let item = addedItem {
-            ItemTableViewController.ITEMS.append(item)
+            ItemTableViewController.ITEMS.insert(item, at: 0)
         }
     }
     
