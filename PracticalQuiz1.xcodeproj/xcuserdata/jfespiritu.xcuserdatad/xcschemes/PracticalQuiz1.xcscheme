@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C576C0841F8CA9070011D283"
-               BuildableName = "ios-10-10-17.app"
-               BlueprintName = "ios-10-10-17"
-               ReferencedContainer = "container:ios-10-10-17.xcodeproj">
+               BuildableName = "PracticalQuiz1.app"
+               BlueprintName = "PracticalQuiz1"
+               ReferencedContainer = "container:PracticalQuiz1.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C576C0841F8CA9070011D283"
-            BuildableName = "ios-10-10-17.app"
-            BlueprintName = "ios-10-10-17"
-            ReferencedContainer = "container:ios-10-10-17.xcodeproj">
+            BuildableName = "PracticalQuiz1.app"
+            BlueprintName = "PracticalQuiz1"
+            ReferencedContainer = "container:PracticalQuiz1.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C576C0841F8CA9070011D283"
-            BuildableName = "ios-10-10-17.app"
-            BlueprintName = "ios-10-10-17"
-            ReferencedContainer = "container:ios-10-10-17.xcodeproj">
+            BuildableName = "PracticalQuiz1.app"
+            BlueprintName = "PracticalQuiz1"
+            ReferencedContainer = "container:PracticalQuiz1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C576C0841F8CA9070011D283"
-            BuildableName = "ios-10-10-17.app"
-            BlueprintName = "ios-10-10-17"
-            ReferencedContainer = "container:ios-10-10-17.xcodeproj">
+            BuildableName = "PracticalQuiz1.app"
+            BlueprintName = "PracticalQuiz1"
+            ReferencedContainer = "container:PracticalQuiz1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
