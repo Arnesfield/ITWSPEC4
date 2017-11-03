@@ -12,6 +12,8 @@
 		C576C08E1F8CA9070011D283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C576C08C1F8CA9070011D283 /* Main.storyboard */; };
 		C576C0901F8CA9070011D283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C576C08F1F8CA9070011D283 /* Assets.xcassets */; };
 		C576C0931F8CA9070011D283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C576C0911F8CA9070011D283 /* LaunchScreen.storyboard */; };
+		C5E536B81FAC5C70005C4273 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E536B71FAC5C70005C4273 /* TestTableViewController.swift */; };
+		C5E536BA1FAC5D6D005C4273 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E536B91FAC5D6D005C4273 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C576C08F1F8CA9070011D283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C576C0921F8CA9070011D283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C576C0941F8CA9070011D283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5E536B71FAC5C70005C4273 /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		C5E536B91FAC5D6D005C4273 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				C576C08F1F8CA9070011D283 /* Assets.xcassets */,
 				C576C0911F8CA9070011D283 /* LaunchScreen.storyboard */,
 				C576C0941F8CA9070011D283 /* Info.plist */,
+				C5E536B71FAC5C70005C4273 /* TestTableViewController.swift */,
+				C5E536B91FAC5D6D005C4273 /* Item.swift */,
 			);
 			name = PracticalQuiz1;
 			path = "ios-10-10-17";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E536BA1FAC5D6D005C4273 /* Item.swift in Sources */,
 				C576C08B1F8CA9070011D283 /* ViewController.swift in Sources */,
 				C576C0891F8CA9070011D283 /* AppDelegate.swift in Sources */,
+				C5E536B81FAC5C70005C4273 /* TestTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
