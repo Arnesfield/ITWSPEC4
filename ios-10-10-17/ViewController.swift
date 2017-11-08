@@ -48,21 +48,22 @@ class ViewController: UIViewController {
         switch (sender.state) {
         case .changed:
             ball.transform = CGAffineTransform(scaleX: sender.scale, y: sender.scale)
-        case .ended:
-            let newBallRect = ball.bounds.applying(ball.transform)
-            ball.bounds = newBallRect
-            ball.setNeedsDisplay()
+        //case .ended:
+            //let newBallRect = ball.bounds.applying(ball.transform)
+            //ball.bounds = newBallRect
+            //ball.setNeedsDisplay()
         default: break
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let size = CGFloat(360)
         ball.frame = CGRect(
-            x: view.bounds.midX - 50,
-            y: view.bounds.midY - 50,
-            width: 100,
-            height: 100)
+            x: view.bounds.midX - CGFloat(size / 2),
+            y: view.bounds.midY - CGFloat(size / 2),
+            width: size,
+            height: size)
         ball.backgroundColor = UIColor.clear
         ball.isOpaque = true
         self.view.addSubview(ball)

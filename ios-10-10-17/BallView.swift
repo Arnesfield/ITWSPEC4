@@ -10,7 +10,7 @@ import UIKit
 
 class BallView: UIView {
 
-    var lineStroke: CGFloat = 3 {
+    var lineStroke: CGFloat = 8 {
         didSet {
             setNeedsDisplay()
         }
@@ -32,8 +32,8 @@ class BallView: UIView {
             clockwise: true)
         
         ball.lineWidth = lineStroke
-        UIColor.red.setStroke()
-        UIColor.brown.setFill()
+        UIColor.yellow.setStroke()
+        UIColor.green.setFill()
         ball.stroke()
         ball.fill()
         
@@ -44,6 +44,7 @@ class BallView: UIView {
             startAngle: 0,
             endAngle: CGFloat(M_PI / 2),
             clockwise: true)
+        stitch1.lineWidth = lineStroke
         stitch1.stroke()
         
         let stitch2 = UIBezierPath()
@@ -53,6 +54,7 @@ class BallView: UIView {
             startAngle: 0,
             endAngle: CGFloat(M_PI * 1.5),
             clockwise: true)
+        stitch2.lineWidth = lineStroke
         stitch2.stroke()
         
     }
