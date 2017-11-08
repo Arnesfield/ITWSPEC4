@@ -13,6 +13,7 @@
 		C5DFDADB1FB2D2BA00EBD4C3 /* BonusActivity1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5DFDAD91FB2D2BA00EBD4C3 /* BonusActivity1.xcdatamodeld */; };
 		C5DFDADD1FB2D2BA00EBD4C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5DFDADC1FB2D2BA00EBD4C3 /* Assets.xcassets */; };
 		C5DFDAE01FB2D2BA00EBD4C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DFDADE1FB2D2BA00EBD4C3 /* LaunchScreen.storyboard */; };
+		C5DFDAE81FB2D70100EBD4C3 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFDAE71FB2D70100EBD4C3 /* ItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C5DFDADC1FB2D2BA00EBD4C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5DFDADF1FB2D2BA00EBD4C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5DFDAE11FB2D2BA00EBD4C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5DFDAE71FB2D70100EBD4C3 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C5DFDADE1FB2D2BA00EBD4C3 /* LaunchScreen.storyboard */,
 				C5DFDAE11FB2D2BA00EBD4C3 /* Info.plist */,
 				C5DFDAD91FB2D2BA00EBD4C3 /* BonusActivity1.xcdatamodeld */,
+				C5DFDAE71FB2D70100EBD4C3 /* ItemCollectionViewCell.swift */,
 			);
 			path = BonusActivity1;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5DFDAD51FB2D2B900EBD4C3 /* ViewController.swift in Sources */,
+				C5DFDAE81FB2D70100EBD4C3 /* ItemCollectionViewCell.swift in Sources */,
 				C5DFDADB1FB2D2BA00EBD4C3 /* BonusActivity1.xcdatamodeld in Sources */,
 				C5DFDAD31FB2D2B900EBD4C3 /* AppDelegate.swift in Sources */,
 			);
@@ -267,7 +271,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HWW3JX37AH;
 				INFOPLIST_FILE = BonusActivity1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appleone.BonusActivity1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,7 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HWW3JX37AH;
 				INFOPLIST_FILE = BonusActivity1/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appleone.BonusActivity1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
