@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7668D77E1F4AD4AE00677ED9"
-               BuildableName = "temp.app"
-               BlueprintName = "temp"
-               ReferencedContainer = "container:temp.xcodeproj">
+               BuildableName = "MP5.app"
+               BlueprintName = "MP5"
+               ReferencedContainer = "container:MP5.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7668D77E1F4AD4AE00677ED9"
-            BuildableName = "temp.app"
-            BlueprintName = "temp"
-            ReferencedContainer = "container:temp.xcodeproj">
+            BuildableName = "MP5.app"
+            BlueprintName = "MP5"
+            ReferencedContainer = "container:MP5.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7668D77E1F4AD4AE00677ED9"
-            BuildableName = "temp.app"
-            BlueprintName = "temp"
-            ReferencedContainer = "container:temp.xcodeproj">
+            BuildableName = "MP5.app"
+            BlueprintName = "MP5"
+            ReferencedContainer = "container:MP5.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7668D77E1F4AD4AE00677ED9"
-            BuildableName = "temp.app"
-            BlueprintName = "temp"
-            ReferencedContainer = "container:temp.xcodeproj">
+            BuildableName = "MP5.app"
+            BlueprintName = "MP5"
+            ReferencedContainer = "container:MP5.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

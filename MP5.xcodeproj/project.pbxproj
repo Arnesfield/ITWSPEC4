@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7668D77F1F4AD4AE00677ED9 /* temp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = temp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7668D77F1F4AD4AE00677ED9 /* MP5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MP5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7668D7821F4AD4AE00677ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7668D7841F4AD4AE00677ED9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7668D7871F4AD4AF00677ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		7668D7761F4AD4AE00677ED9 = {
 			isa = PBXGroup;
 			children = (
-				7668D7811F4AD4AE00677ED9 /* temp */,
+				7668D7811F4AD4AE00677ED9 /* MP5 */,
 				7668D7801F4AD4AE00677ED9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		7668D7801F4AD4AE00677ED9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7668D77F1F4AD4AE00677ED9 /* temp.app */,
+				7668D77F1F4AD4AE00677ED9 /* MP5.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7668D7811F4AD4AE00677ED9 /* temp */ = {
+		7668D7811F4AD4AE00677ED9 /* MP5 */ = {
 			isa = PBXGroup;
 			children = (
 				7668D7821F4AD4AE00677ED9 /* AppDelegate.swift */,
@@ -61,15 +61,16 @@
 				7668D78B1F4AD4AF00677ED9 /* LaunchScreen.storyboard */,
 				7668D78E1F4AD4AF00677ED9 /* Info.plist */,
 			);
+			name = MP5;
 			path = temp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7668D77E1F4AD4AE00677ED9 /* temp */ = {
+		7668D77E1F4AD4AE00677ED9 /* MP5 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7668D7911F4AD4AF00677ED9 /* Build configuration list for PBXNativeTarget "temp" */;
+			buildConfigurationList = 7668D7911F4AD4AF00677ED9 /* Build configuration list for PBXNativeTarget "MP5" */;
 			buildPhases = (
 				7668D77B1F4AD4AE00677ED9 /* Sources */,
 				7668D77C1F4AD4AE00677ED9 /* Frameworks */,
@@ -79,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = temp;
+			name = MP5;
 			productName = temp;
-			productReference = 7668D77F1F4AD4AE00677ED9 /* temp.app */;
+			productReference = 7668D77F1F4AD4AE00677ED9 /* MP5.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,11 +97,12 @@
 				TargetAttributes = {
 					7668D77E1F4AD4AE00677ED9 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = HWW3JX37AH;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 7668D77A1F4AD4AE00677ED9 /* Build configuration list for PBXProject "temp" */;
+			buildConfigurationList = 7668D77A1F4AD4AE00677ED9 /* Build configuration list for PBXProject "MP5" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7668D77E1F4AD4AE00677ED9 /* temp */,
+				7668D77E1F4AD4AE00677ED9 /* MP5 */,
 			);
 		};
 /* End PBXProject section */
@@ -262,9 +264,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HWW3JX37AH;
 				INFOPLIST_FILE = temp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arnesfield.ios.temp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appleone.mp5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,9 +278,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HWW3JX37AH;
 				INFOPLIST_FILE = temp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arnesfield.ios.temp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appleone.mp5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -285,7 +291,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7668D77A1F4AD4AE00677ED9 /* Build configuration list for PBXProject "temp" */ = {
+		7668D77A1F4AD4AE00677ED9 /* Build configuration list for PBXProject "MP5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7668D78F1F4AD4AF00677ED9 /* Debug */,
@@ -294,13 +300,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7668D7911F4AD4AF00677ED9 /* Build configuration list for PBXNativeTarget "temp" */ = {
+		7668D7911F4AD4AF00677ED9 /* Build configuration list for PBXNativeTarget "MP5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7668D7921F4AD4AF00677ED9 /* Debug */,
 				7668D7931F4AD4AF00677ED9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
