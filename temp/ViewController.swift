@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     var textColor: [Float] = [1, 1, 1]
     var bgColor: [Float] = [0, 0, 0]
     
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblBgSwitch: UILabel!
     @IBOutlet weak var lblOwner: UILabel!
     @IBAction func btnShowMsg(_ sender: Any) {
-        lblMsg.text = field.text
+        showMsg()
     }
     @IBAction func btnReset(_ sender: Any) {
         reset()
@@ -38,6 +38,7 @@ class ViewController: UIViewController {
             setTextColor()
         }
         
+        saveStates()
     }
     @IBAction func rSliderAction(_ sender: Any) {
         slide()
@@ -47,6 +48,11 @@ class ViewController: UIViewController {
     }
     @IBAction func bSliderAction(_ sender: Any) {
         slide()
+    }
+    
+    @IBAction func tapHandler(_ sender: UITapGestureRecognizer) {
+        saveStates()
+        field.resignFirstResponder()
     }
     
     // functions
@@ -69,7 +75,7 @@ class ViewController: UIViewController {
             setStats(for: lblTextStats, colors: textColor, name: "Text")
         }
         
-        // saveStates()
+        saveStates()
     }
     
     func render() -> Void {
@@ -78,7 +84,7 @@ class ViewController: UIViewController {
         setStats(for: lblBgStats, colors: bgColor, name: "Background")
         setStats(for: lblTextStats, colors: textColor, name: "Text")
         
-        // saveStates()
+        saveStates()
     }
     
     func reset() -> Void {
@@ -90,6 +96,11 @@ class ViewController: UIViewController {
         bgColor = [0, 0, 0]
         
         render()
+    }
+    
+    func showMsg() {
+        lblMsg.text = field.text
+        field.text = ""
     }
     
     
@@ -142,6 +153,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        field.delegate = self
+        
         if let sBgColor = defaults.object(forKey: "bgColor"),
             let sTextColor = defaults.object(forKey: "textColor"),
             let sSwitch = defaults.object(forKey: "switch"),
@@ -168,14 +181,13 @@ class ViewController: UIViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        // saveStates()
+        saveStates()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        showMsg()
+        saveStates()
+        return textField.resignFirstResponder()
     }
-
-
 }
 

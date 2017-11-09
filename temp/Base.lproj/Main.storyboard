@@ -170,6 +170,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="SlF-eg-XGO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="1K6-NH-fVL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zwI-k4-Kqh" secondAttribute="bottom" id="4O7-Q7-QMv"/>
@@ -182,6 +183,9 @@
                             <constraint firstItem="9OB-Hd-gAm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hPo-FR-eNh"/>
                             <constraint firstItem="SlF-eg-XGO" firstAttribute="top" secondItem="9OB-Hd-gAm" secondAttribute="bottom" constant="24" id="uM2-kn-WFf"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LgK-k3-9bi" appends="YES" id="Jhl-JW-D1C"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="bSliderOutlet" destination="9fp-qA-MCa" id="9D7-yK-r6n"/>
@@ -198,6 +202,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LgK-k3-9bi">
+                    <connections>
+                        <action selector="tapHandler:" destination="BYZ-38-t0r" id="36j-Zx-9fP"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="117.1875" y="121.87499999999999"/>
         </scene>
