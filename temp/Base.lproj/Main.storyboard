@@ -31,7 +31,7 @@
                                 <rect key="frame" x="0.0" y="20" width="768" height="852"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tyd-AY-ls7">
-                                        <rect key="frame" x="24" y="139" width="720" height="64"/>
+                                        <rect key="frame" x="24" y="131" width="720" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="3Vi-9v-4e7"/>
                                         </constraints>
@@ -40,7 +40,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Jca-VC-BRn">
-                                        <rect key="frame" x="199.5" y="549" width="370" height="31"/>
+                                        <rect key="frame" x="199.5" y="541" width="370" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8n-Eq-CJi">
                                                 <rect key="frame" x="0.0" y="0.0" width="128.5" height="31"/>
@@ -66,7 +66,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="kXp-95-cVv">
-                                        <rect key="frame" x="24" y="363" width="720" height="138"/>
+                                        <rect key="frame" x="24" y="355" width="720" height="138"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tTp-BB-Tl8">
                                                 <rect key="frame" x="-2" y="0.0" width="724" height="31"/>
@@ -98,13 +98,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWg-FM-Xtw">
-                                        <rect key="frame" x="24" y="48" width="720" height="43"/>
+                                        <rect key="frame" x="24" y="52" width="720" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hNp-hn-LFk">
-                                        <rect key="frame" x="24" y="251" width="720" height="64"/>
+                                        <rect key="frame" x="24" y="243" width="720" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background = Red: 0, Green: 0, Blue: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aau-t8-JHY">
                                                 <rect key="frame" x="0.0" y="0.0" width="348.5" height="24"/>
@@ -127,7 +127,7 @@
                                     <constraint firstItem="kXp-95-cVv" firstAttribute="top" secondItem="hNp-hn-LFk" secondAttribute="bottom" constant="48" id="CPr-L3-T51"/>
                                     <constraint firstItem="hNp-hn-LFk" firstAttribute="leading" secondItem="9OB-Hd-gAm" secondAttribute="leading" constant="24" id="TSm-9r-vpq"/>
                                     <constraint firstAttribute="trailing" secondItem="kXp-95-cVv" secondAttribute="trailing" constant="24" id="UD0-Ip-mSa"/>
-                                    <constraint firstItem="FWg-FM-Xtw" firstAttribute="top" secondItem="9OB-Hd-gAm" secondAttribute="top" constant="48" id="aLS-ub-XYx"/>
+                                    <constraint firstItem="FWg-FM-Xtw" firstAttribute="top" secondItem="9OB-Hd-gAm" secondAttribute="top" constant="52" id="aLS-ub-XYx"/>
                                     <constraint firstItem="kXp-95-cVv" firstAttribute="leading" secondItem="9OB-Hd-gAm" secondAttribute="leading" constant="24" id="gi2-x3-q0a"/>
                                     <constraint firstAttribute="trailing" secondItem="Tyd-AY-ls7" secondAttribute="trailing" constant="24" id="jdn-O4-jIp"/>
                                     <constraint firstItem="hNp-hn-LFk" firstAttribute="top" secondItem="Tyd-AY-ls7" secondAttribute="bottom" constant="48" id="luk-Ls-Xif"/>
@@ -135,7 +135,7 @@
                                     <constraint firstItem="FWg-FM-Xtw" firstAttribute="leading" secondItem="9OB-Hd-gAm" secondAttribute="leading" constant="24" id="pc8-MH-3ze"/>
                                     <constraint firstAttribute="trailing" secondItem="hNp-hn-LFk" secondAttribute="trailing" constant="24" id="pht-EU-GIU"/>
                                     <constraint firstItem="Jca-VC-BRn" firstAttribute="top" secondItem="kXp-95-cVv" secondAttribute="bottom" constant="48" id="rhf-eF-UT1"/>
-                                    <constraint firstItem="Tyd-AY-ls7" firstAttribute="top" secondItem="FWg-FM-Xtw" secondAttribute="bottom" constant="48" id="u3G-KW-3nQ"/>
+                                    <constraint firstItem="Tyd-AY-ls7" firstAttribute="top" secondItem="FWg-FM-Xtw" secondAttribute="bottom" constant="36" id="u3G-KW-3nQ"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zwI-k4-Kqh">
@@ -187,7 +187,12 @@
                         <outlet property="bSliderOutlet" destination="9fp-qA-MCa" id="9D7-yK-r6n"/>
                         <outlet property="field" destination="Tyd-AY-ls7" id="YJA-i3-8sX"/>
                         <outlet property="gSliderOutlet" destination="ESR-21-dwn" id="65l-d8-F4E"/>
-                        <outlet property="lblMsg" destination="FWg-FM-Xtw" id="OTc-p1-8kn"/>
+                        <outlet property="lblBgStats" destination="Aau-t8-JHY" id="Byf-QA-lRT"/>
+                        <outlet property="lblBgSwitch" destination="cMH-oA-ef7" id="oG4-FD-fNL"/>
+                        <outlet property="lblMsg" destination="FWg-FM-Xtw" id="8h4-DA-tcK"/>
+                        <outlet property="lblOwner" destination="SlF-eg-XGO" id="Epd-7u-DwL"/>
+                        <outlet property="lblTextStats" destination="xwJ-3W-XhZ" id="YWC-ua-uRD"/>
+                        <outlet property="lblTextSwitch" destination="q8n-Eq-CJi" id="7WV-UT-rdL"/>
                         <outlet property="rSliderOutlet" destination="tTp-BB-Tl8" id="Xbj-B6-R1Y"/>
                         <outlet property="switchOutlet" destination="oot-Hf-Bb0" id="pqg-bP-Ckz"/>
                     </connections>
